@@ -2,14 +2,21 @@ import React from 'react'
 
 import { HeaderWrapper } from './Style'
 
+import Wrap from "../Wrap/Wrap";
+import Block from "../Block/Block";
+
 function Header() {
   return (
     <>
-        <HeaderWrapper>
+      <HeaderWrapper>
+        <Block>
+          <Wrap>
             <p>Lorem, ipsum dolor.</p>
-        </HeaderWrapper>
+          </Wrap>
+        </Block>
+      </HeaderWrapper>
     </>
-  )
+  );
 }
 
 export default Header
