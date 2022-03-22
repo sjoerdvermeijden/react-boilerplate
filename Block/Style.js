@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const BlockWrapper = styled.div`
-  padding: 70px 0;
+  padding: 70px 45px;
 `;

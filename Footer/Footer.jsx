@@ -9,7 +9,7 @@ function Footer() {
     <>
       <FooterWrapper>
         <Wrap>
-          <p>Footer</p>
+          <p>Sjoerd Vermeijden</p>
         </Wrap>
       </FooterWrapper>
     </>

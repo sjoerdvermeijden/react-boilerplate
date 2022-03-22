@@ -9,7 +9,7 @@ function Header() {
     <>
       <HeaderWrapper>
         <Wrap>
-          <p>Lorem, ipsum dolor.</p>
+          <h1>React Portfolio</h1>
         </Wrap>
       </HeaderWrapper>
     </>
