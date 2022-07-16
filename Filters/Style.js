@@ -6,7 +6,7 @@ export const FiltersWrapper = styled.div`
   width: 250px;
 
   &:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 
   ul {
@@ -21,11 +21,17 @@ export const FiltersWrapper = styled.div`
     }
     
   }
+
+  input[type="checkbox"] {
+    
+    &:not(:last-child) {
+      margin-right: 10px;
+      margin-top: 1px;
+    }
+    
+  }
   
   label {
-    display: inline-block;
-    margin-right: auto;
-    flex-grow: 1;
 
     &:hover,
     &:focus {

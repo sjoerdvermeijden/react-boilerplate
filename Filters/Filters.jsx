@@ -81,16 +81,16 @@ function Filters() {
         <FiltersWrapper>
           <ul onChange={(e) => clickFunction(e)}>
             <li>
-              <label htmlFor="stoep">Stoep</label>
               <input type="checkbox" name="" id="stoep" />
+              <label htmlFor="stoep">Stoep</label>
             </li>
             <li>
-              <label htmlFor="bon">Bon</label>
               <input type="checkbox" name="" id="bon" />
+              <label htmlFor="bon">Bon</label>
             </li>
             <li>
-              <label htmlFor="bal">Bal</label>
               <input type="checkbox" name="" id="bal" />
+              <label htmlFor="bal">Bal</label>
             </li>
           </ul>
         </FiltersWrapper>
