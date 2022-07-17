@@ -1,41 +1,55 @@
 import styled from 'styled-components';
 
 export const FiltersWrapper = styled.div`
-  padding: 10px;
-  background: var(--lightgray);
-  width: 250px;
 
   &:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  li {
-    display: flex;
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-    
-  }
-
-  input[type="checkbox"] {
-    
-    &:not(:last-child) {
-      margin-right: 10px;
-      margin-top: 1px;
-    }
-    
+    margin-right: 20px;
   }
   
-  label {
+  .filter-list {
+    list-style: none;
+    margin: -10px;
 
-    &:hover,
-    &:focus {
-      cursor: pointer;
+    &__item {
+      padding: 10px;
     }
+
+  }
+
+  .filter {
+    padding: 15px;
+    background: var(--lightgray);
+    min-width: 250px;
+
+    &__label {
+      display: inline-block;
+
+      &:focus,
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    &__title,
+    &__item {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+    }
+
+    &__checkbox {
+      display: inline-block;
+      margin-top: 1px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+    }
+
   }
 `;

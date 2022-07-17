@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
 
     :root {
         --red: crimson;
-        --lightgray: #f5f5f5;
+        --lightgray: #efeeee;
         --darkgray: #333333;
     }
   
@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: Verdana, Geneva, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        font-size: 14px;
     }
 
     body {
