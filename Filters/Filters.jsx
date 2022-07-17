@@ -17,6 +17,8 @@ function Filters() {
       .filter((item) => item.querySelector("input:checked"))
       .map((item) => item.querySelector("input").id);
 
+    console.log(newArray);
+
     setFilters(newArray);
   };
 
@@ -88,6 +90,17 @@ function Filters() {
                   />
                   <label className="filter__label" htmlFor="spa">
                     Spa
+                  </label>
+                </li>
+                <li className="filter__item">
+                  <input
+                    type="checkbox"
+                    className="filter__checkbox"
+                    name=""
+                    id="parking"
+                  />
+                  <label className="filter__label" htmlFor="parking">
+                    Parking
                   </label>
                 </li>
                 <li className="filter__item">

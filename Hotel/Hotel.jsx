@@ -10,6 +10,7 @@ function Hotel({
   type,
   image,
   adress,
+  reviews,
   stars,
   price,
   rating,
@@ -49,6 +50,11 @@ function Hotel({
             <div className="hotel__details">
               <p className="hotel__price">€{price}</p>
               <p className="hotel__rating">{rating}</p>
+              <span className="hotel__reviews">
+                {
+                (reviews?.length > 0) ? `${reviews.length} reviews` : ''
+                }
+              </span>
             </div>
           </div>
         </div>

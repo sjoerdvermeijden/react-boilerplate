@@ -113,6 +113,10 @@ export const HotelWrapper = styled.div`
       border-radius: 3px;
     }
 
+    &__reviews {
+      font-size: 12px;
+    }
+
   }
 
 `;
