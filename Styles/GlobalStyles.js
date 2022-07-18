@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     :root {
         --red: crimson;
         --lightgray: #efeeee;
+        --gray: #b1b1b1;
         --darkgray: #333333;
     }
   
@@ -23,6 +24,10 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
 
+    }
+
+    h3 {
+        font-size: 18px;
     }
 
 `;
