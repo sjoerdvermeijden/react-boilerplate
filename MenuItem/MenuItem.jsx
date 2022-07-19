@@ -51,9 +51,13 @@ function MenuItem({ id, title, image, description, price, count }) {
     setIsOpen(false);
   }
 
-  const AddFunction = (e) => {
-    setCartState(prevState => [{id, title, price, count: 1}, ...prevState])
-    setTotalState(prevState => Number(prevState) + Number(price))
+  const AddFunction = (e, id) => {
+
+    if (cartState.find((item) => item.id === id)) {
+    } else {
+      setCartState(prevState => [{id, title, price, count: 1}, ...prevState])
+      setTotalState(prevState => Number(prevState) + Number(price))
+    }
   }
 
   return (
@@ -77,7 +81,7 @@ function MenuItem({ id, title, image, description, price, count }) {
           <figure className="menu-item__image">
             <img src={image.img} alt={image.alt} />
           </figure>
-          <button className="menu-item__add" onClick={(e) => AddFunction(e)}>
+          <button className="menu-item__add" onClick={(e) => AddFunction(e, id)}>
             +
           </button>
           <div className="menu-item__container">

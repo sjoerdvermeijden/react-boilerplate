@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CartWrapper = styled.div`
   padding: 15px;
   background: var(--lightgray);
-  min-width: 300px;
+  width: 300px;
 
   .cart {
 

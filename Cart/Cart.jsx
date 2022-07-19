@@ -27,17 +27,18 @@ function Filter() {
 
   const minusFunction = (e, id) => {
     cartState.map((item) => {
-      if (item.id === id) {
-        if (item.count <= 1) {
-          const randomArray = cartState.map((item) => {
-            item.count--;
-            setTotalState((prevState) => Number(prevState) - Number(item.price));
-            return item;
-          });
-          setCartState(randomArray);
+      if (item.id === id)  {
+        if (item.count > 1) {
+          const newArray = cartState.map((item) => {
+            if (item.id === id) {
+              item.count--
+              return item;
+            } else {
+              
+            }
+          })
         } else {
-          const newArray = cartState.filter((item) => item.id !== id);
-          setCartState(newArray);
+
         }
       }
     });

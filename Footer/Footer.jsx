@@ -8,6 +8,7 @@ import Wrap from "../Wrap/Wrap";
 
 export const StyledLink = styled.a`
   color: white;
+  font-weight: bold;
 `;
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
     <>
       <FooterWrapper>
         <Wrap>
-          <p>Github repo: <StyledLink href="/">hier</StyledLink> | Sjoerd Vermeijden</p>
+          <p>Github repo: <StyledLink href="https://github.com/sjoerdvermeijden/next-order" target="_blank">hier</StyledLink> | Sjoerd Vermeijden</p>
         </Wrap>
       </FooterWrapper>
     </>
